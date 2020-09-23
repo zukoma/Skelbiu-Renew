@@ -17,5 +17,5 @@ python skelbiu.py
 - Change path to: /usr/lib/chromium-browser/chromedriver
 
 # Set Chronetab for daily run
-crontab -e
-* 18 * * * /home/pi/skelbiu.lt.py
+- crontab -e
+- * 18 * * * /home/pi/skelbiu.lt.py (will run everyday at 6pm)
