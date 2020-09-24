@@ -18,4 +18,4 @@ python skelbiu.py
 
 # Set Chronetab for daily run
 - crontab -e
-- * 18 * * * /home/pi/skelbiu.lt.py (will run everyday at 6pm)
+-"* 18 * * * /home/pi/skelbiu.lt.py" (will run everyday at 6pm)
