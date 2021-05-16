@@ -15,9 +15,9 @@ driver = webdriver.Chrome(options=options, executable_path='/usr/lib/chromium-br
 
 def renew():
     driver.get ('https://www.skelbiu.lt/users/renew')
-    driver.find_element_by_id('nick').send_keys(username)
-    driver.find_element_by_id('password').send_keys(password)
-    login_button = driver.find_element_by_xpath('//*[@id="login-button"]')
+    driver.find_element_by_id('nick-input').send_keys(username)
+    driver.find_element_by_id('password-input').send_keys(password)
+    login_button = driver.find_element_by_xpath('//*[@id="submit-button"]')
     driver.execute_script("arguments[0].click();", login_button)
     driver.implicitly_wait(1)
     renew_button = driver.find_element_by_xpath('//*[@id="default_page_content"]/form/button')
