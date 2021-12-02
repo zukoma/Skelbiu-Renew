@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 import sys
 
+
 username = sys.argv[1]
 password = sys.argv[2]
 
@@ -24,4 +25,6 @@ def renew():
     renew_button = driver.find_element_by_xpath('//*[@id="default_page_content"]/form/button')
     driver.execute_script("arguments[0].click();", renew_button)
 
-renew()
+    
+if __name__ == "__main__":
+    renew()
