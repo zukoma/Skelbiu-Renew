@@ -12,7 +12,7 @@ Change username and password field and fill in path to web driver. Once filled i
 ```bash
 python skelbiu.py username password
 ```
-# For Raspberry Pi
+# For RPI
 - sudo apt-get install chromium-chromedriver
 - Change path to: /usr/lib/chromium-browser/chromedriver
 
