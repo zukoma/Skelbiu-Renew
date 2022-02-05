@@ -15,7 +15,7 @@ options.add_argument('headless')
 driver = webdriver.Chrome(options=options, executable_path='/usr/lib/chromium-browser/chromedriver')
 
 
-def renew():
+def main():
     driver.get('https://www.skelbiu.lt/users/renew')
     driver.find_element_by_id('nick-input').send_keys(username)
     driver.find_element_by_id('password-input').send_keys(password)
@@ -27,4 +27,4 @@ def renew():
 
     
 if __name__ == "__main__":
-    renew()
+    main()
