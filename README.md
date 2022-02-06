@@ -7,10 +7,12 @@ Renew skelbiu.lt ads with headless web driver.
 
 # Getting started
 
-Change username and password field and fill in path to web driver. Once filled in:
+Change username and password field and adjust path to the web driver. Once filled in:
 
 ```bash
-python skelbiu.py username password
+pip install -r requirements.txt
+chmod +x Skelbiu.py
+./Skelbiu.py username password
 ```
 # For RPI
 - sudo apt-get install chromium-chromedriver
